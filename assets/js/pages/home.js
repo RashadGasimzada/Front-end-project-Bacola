@@ -1,5 +1,5 @@
 $(function() {
-    $('.owl-carousel').owlCarousel({
+    $('.first-carousel').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
@@ -12,6 +12,22 @@ $(function() {
             },
             1000:{
                 items:1
+            }
+        }
+    })
+    $('.second-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1200:{
+                items:5
             }
         }
     })
@@ -40,15 +56,48 @@ $(function() {
     if (JSON.parse(localStorage.getItem("products")) == null) {
         localStorage.setItem("products", JSON.stringify([]));
     }
-
+    let countElem = $("sup")
     let products = JSON.parse(localStorage.getItem("products"));
 
     $(".add-to-card").click(function() {
-        let productId = this.parent.parent.parent.attr("data-id");
-        
-        console.log(this.parent);
+       
+        let productId = $(this).parent().parent().parent().attr("data-id"); 
+        if (productId == $(this).attr("data-id")) {
+            let productImg = $(this).parent().parent().prev().attr("src")
+            let productName = $(this).parent().parent().children(":first").text();
+            let productPrice = $(this).parent().prev().text();
+            let existProduct = products.find(m => m.id == productId);
+            if ($(this).attr("data-id") == 4) {
+                return;
+            }
+            else if (existProduct == undefined) {
+                products.push({
+                    id: productId,
+                    img: productImg,
+                    name: productName,
+                    price: productPrice,
+                    count: 1
+                })
+            } else {
+                existProduct.count += 1;
+            }
+            localStorage.setItem("products", JSON.stringify(products));
+            countElem.text(products.length);
+            if (productId.length != 0) {
+                $(".shopping-items-hidden img").remove();
+                $(".border-shop").remove();
+                $(".shopping-items-hidden").html(`<img src="${productImg}" alt="">`)
+            }
+        }
     })
-
-        
-    
+    countElem.text(products.length);
+    $(".input-box .btn").click(function(e) {
+        if($(".input-box input").val() == 0) {
+            e.preventDefault();
+            $(".input-box input").css("border","2px solid red");
+        }
+        else {
+            $(".input-box input").css("border","none");
+        }
+    })
 })
