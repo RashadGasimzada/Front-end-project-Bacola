@@ -1132,12 +1132,12 @@
   background-color: #F7F8FD;
 }
 
-#ftr-categories .col-xl-3 .list-group .first {
+#ftr-categories .custom-col .list-group .first {
   font-size: 18px !important;
   color: black !important;
 }
 
-#ftr-categories .col-xl-3 .list-group .list-group-item {
+#ftr-categories .custom-col .list-group .list-group-item {
   background-color: #F7F8FD;
   border: none;
   color: gray;
@@ -1210,25 +1210,6 @@
   margin: 0 10px;
 }
 
-.links .link-icon {
-  color: gray;
-  font-size: 14px;
-}
-
-.links .link-shop {
-  color: gray;
-  font-size: 14px;
-}
-
-.links .link-home {
-  font-size: 14px;
-  color: black;
-}
-
-.links a {
-  text-decoration: none;
-}
-
 #login-register .col-xl-6 h4 {
   padding: 0 0 20px 0;
   border-bottom: 1px solid gray;
@@ -1299,6 +1280,108 @@
 
 #login-register .col-xl-6 .policy-paragraph .policy {
   color: red;
+}
+
+#get-in-touch .text {
+  text-align: center;
+}
+
+#get-in-touch .card-box {
+  background-color: #f3f3f6;
+  width: 370px;
+  height: 202px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+}
+
+#send-mail .send-box {
+  height: 750px;
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 80px;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 20px 1px #888888;
+          box-shadow: 1px 1px 20px 1px #888888;
+}
+
+#send-mail .send-box .text {
+  padding-bottom: 35px;
+  border-bottom: 1px solid gray;
+}
+
+#send-mail .send-box form .label-name {
+  display: block;
+  margin-left: 65px;
+  text-align: start;
+}
+
+#send-mail .send-box form .label-name2 {
+  display: block;
+  margin-left: 65px;
+  padding-top: 50px;
+  text-align: start;
+}
+
+#send-mail .send-box form textarea {
+  height: 120px;
+  width: 80%;
+}
+
+#send-mail .send-box form .btn {
+  display: block;
+  background-color: darkblue;
+  border: none;
+  margin-left: 60px;
+}
+
+#send-mail .send-box input, #send-mail .send-box textarea {
+  background: #f3f4f7;
+  border: none;
+  height: 40px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#send-mail .send-box input:focus, #send-mail .send-box textarea:focus {
+  outline: none;
+}
+
+.main-sect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 650px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-sect .btn {
+  background-color: darkblue;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
 }
 
 * {
