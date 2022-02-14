@@ -83,11 +83,6 @@ $(function() {
             }
             localStorage.setItem("products", JSON.stringify(products));
             countElem.text(products.length);
-            if (productId.length != 0) {
-                $(".shopping-items-hidden img").remove();
-                $(".border-shop").remove();
-                $(".shopping-items-hidden").html(`<img src="${productImg}" alt="">`)
-            }
         }
     })
     countElem.text(products.length);

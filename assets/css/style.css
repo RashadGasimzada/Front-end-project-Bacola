@@ -642,11 +642,11 @@
 }
 
 #ad-and-products .col-xl-8 .col-xl-4 .card:hover .hidden-box {
-  display: block !important;
+  visibility: visible !important;
 }
 
 #ad-and-products .col-xl-8 .col-xl-4 .card .hidden-box {
-  display: none;
+  visibility: hidden;
 }
 
 #ad-and-products .col-xl-8 .col-xl-4 .card .hidden-box .btn {
@@ -835,7 +835,7 @@
 }
 
 #best-sellers .owl-carousel .item .card:hover .hidden-box {
-  display: block !important;
+  visibility: visible !important;
 }
 
 #best-sellers .owl-carousel .item .card .hidden-box .btn {
@@ -921,29 +921,40 @@
   text-decoration: none;
 }
 
-#products .col-xl-3 .card:hover .hidden-box {
+.custom-col {
+  width: 264px;
+}
+
+#products .custom-col .card:hover {
+  -webkit-box-shadow: 10px 5px 5px #b9b9b9;
+          box-shadow: 10px 5px 5px #b9b9b9;
+  border: 1px solid #b9b9b9;
+  z-index: 100;
+}
+
+#products .custom-col .card:hover .hidden-box {
   visibility: visible !important;
 }
 
-#products .col-xl-3 .card .hidden-box {
-  visibility: none;
+#products .custom-col .card .hidden-box {
+  visibility: hidden !important;
 }
 
-#products .col-xl-3 .card .hidden-box .btn {
+#products .custom-col .card .hidden-box .btn {
   height: 35px;
-  width: 225px;
+  width: 220px;
   border-radius: 20px;
   text-align: center;
-  background-color: #FFCD00;
+  background-color: darkblue;
   border: none;
 }
 
-#products .col-xl-3 .card img {
-  height: 180px;
-  width: 205px;
+#products .custom-col .card img {
+  height: 100px;
+  width: 150px;
 }
 
-#products .col-xl-3 .card .onsale {
+#products .custom-col .card .onsale {
   margin: 20px 0 0 20px;
   background-color: #2BBEF9;
   width: 45px;
@@ -952,7 +963,7 @@
   color: white;
 }
 
-#products .col-xl-3 .card .recommended {
+#products .custom-col .card .recommended {
   margin: 5px 0 0 20px;
   text-align: center;
   background-color: #71778E;
@@ -961,23 +972,23 @@
   border-radius: 20px;
 }
 
-#products .col-xl-3 .card .card-body .card-title {
-  font-size: 18px;
+#products .custom-col .card .card-body .card-title {
+  font-size: 17px;
 }
 
-#products .col-xl-3 .card .card-body .card-text {
+#products .custom-col .card .card-body .card-text {
   font-size: 14px;
   color: #3aff33;
   margin: 0;
 }
 
-#products .col-xl-3 .card .card-body .cross-out {
+#products .custom-col .card .card-body .cross-out {
   display: inline-block;
   text-decoration: line-through;
   color: #C4C4D4;
 }
 
-#products .col-xl-3 .card .card-body .sale {
+#products .custom-col .card .card-body .sale {
   color: red;
 }
 
@@ -1183,6 +1194,10 @@
           justify-content: end;
 }
 
+#last-ftr .phone-and-apps .socials i, #last-ftr .phone-and-apps .socials img {
+  cursor: pointer;
+}
+
 #last-ftr .copyright p {
   color: gray;
   font-size: 14px;
@@ -1193,6 +1208,97 @@
   color: gray;
   font-size: 14px;
   margin: 0 10px;
+}
+
+.links .link-icon {
+  color: gray;
+  font-size: 14px;
+}
+
+.links .link-shop {
+  color: gray;
+  font-size: 14px;
+}
+
+.links .link-home {
+  font-size: 14px;
+  color: black;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+#login-register .col-xl-6 h4 {
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid gray;
+}
+
+#login-register .col-xl-6 [for~=email] {
+  display: block;
+  padding: 25px 0 15px 0;
+}
+
+#login-register .col-xl-6 [for~=password] {
+  display: block;
+  padding: 25px 0 15px 0;
+}
+
+#login-register .col-xl-6 [type~=text] {
+  background: #f3f4f7;
+  border: none;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#login-register .col-xl-6 [type~=text]:focus {
+  outline: none;
+}
+
+#login-register .col-xl-6 [type~=email] {
+  background: #f3f4f7;
+  border: none;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#login-register .col-xl-6 [type~=email]:focus {
+  outline: none;
+}
+
+#login-register .col-xl-6 [type~=password] {
+  background: #f3f4f7;
+  border: none;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#login-register .col-xl-6 [type~=password]:focus {
+  outline: none;
+}
+
+#login-register .col-xl-6 .btn {
+  background-color: darkblue;
+  border: none;
+  display: block;
+}
+
+#login-register .col-xl-6 .lost-pass {
+  text-decoration: none;
+}
+
+#login-register .col-xl-6 .policy-paragraph {
+  font-size: 14px;
+}
+
+#login-register .col-xl-6 .policy-paragraph .policy {
+  color: red;
 }
 
 * {

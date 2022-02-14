@@ -571,10 +571,10 @@
                     z-index: 100;
                 }
                 &:hover .hidden-box {
-                    display: block !important;
+                    visibility: visible !important;
                 }
                 .hidden-box {
-                    display: none;
+                    visibility: hidden;
                     .btn {
                         height: 35px;
                         width: 250px;
@@ -739,7 +739,7 @@
             
             .card {
                 &:hover .hidden-box {
-                    display: block !important;
+                    visibility: visible !important;
                 }
                 .hidden-box {
                     .btn {
@@ -811,26 +811,34 @@
     display: flex;
     justify-content: center
 }
+.custom-col {
+    width: 264px;
+}
 #products {
-    .col-xl-3 {
+    .custom-col {
         .card {
+            &:hover {
+                box-shadow: 10px 5px 5px rgb(185, 185, 185);
+                border: 1px solid rgb(185, 185, 185);
+                z-index: 100;
+            }
             &:hover .hidden-box {
                 visibility: visible !important;
             }
             .hidden-box {
-                visibility: none;
+                visibility: hidden !important;
                 .btn {
                     height: 35px;
-                    width: 225px;
+                    width: 220px;
                     border-radius: 20px;
                     text-align: center;
-                    background-color: #FFCD00;
+                    background-color: darkblue;
                     border: none;
                 }
             }
             img {
-                height: 180px;
-                width: 205px;
+                height: 100px;
+                width: 150px;
             }
            .onsale {
             margin: 20px 0 0 20px;
@@ -850,7 +858,7 @@
            }
            .card-body {
                .card-title {
-                   font-size: 18px;
+                   font-size: 17px;
                }
                .card-text {
                    font-size: 14px;
@@ -1044,6 +1052,9 @@
         .socials {
             display: flex;
             justify-content: end;
+            i,img {
+                cursor: pointer;
+            }
         }
     }
    .copyright {
