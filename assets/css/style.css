@@ -1384,6 +1384,51 @@
   border: none;
 }
 
+.about-img {
+  background-color: black;
+  position: relative;
+}
+
+.about-img img {
+  height: 600px;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.about-img h1 {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  font-size: 60px;
+  color: white;
+}
+
+.about-img h4 {
+  position: absolute;
+  top: 52%;
+  left: 39%;
+  color: white;
+  font-size: 40px;
+}
+
+#about-text .img-and-text {
+  position: relative;
+}
+
+#about-text .img-and-text img {
+  width: 100%;
+  height: 680px;
+}
+
+#about-text .img-and-text .position-text {
+  padding: 30px 15px 30px 70px;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  background: white;
+  border-radius: 10px;
+}
+
 * {
   font-family: "Inter", sans-serif;
 }
