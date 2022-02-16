@@ -1429,6 +1429,183 @@
   border-radius: 10px;
 }
 
+.col-xl-9 img {
+  border-radius: 10px;
+}
+
+.col-xl-9 .icons-and-text i {
+  color: blue;
+}
+
+.col-xl-9 .icons-and-text span {
+  color: gray;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.col-xl-9 .icons-and-text span:hover {
+  text-decoration: underline;
+}
+
+.col-xl-9 p a {
+  color: blue;
+  text-decoration: none;
+}
+
+.col-xl-9 p a:hover {
+  text-decoration: underline;
+}
+
+.col-xl-9 .btn {
+  background-color: darkblue;
+  border: none;
+  height: 40px;
+  width: 114px;
+}
+
+.col-xl-9 .prev-and-next {
+  text-align: center;
+}
+
+.col-xl-9 .prev-and-next .page-number {
+  padding: 15px 20px;
+  background-color: blue;
+  border-radius: 50%;
+  color: white;
+}
+
+.col-xl-9 .prev-and-next span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.col-xl-9 .prev-and-next i {
+  cursor: pointer;
+}
+
+.col-xl-3 .blog-input-box {
+  position: relative;
+}
+
+.col-xl-3 .blog-input-box i {
+  position: absolute;
+  top: 30%;
+  right: 18%;
+}
+
+.col-xl-3 .blog-input-box input {
+  border: none;
+  background-color: #F3F4F7;
+  width: 270px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.col-xl-3 .popular-posts {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.col-xl-3 .popular-posts .popular-posts-img {
+  display: inline-block;
+  position: relative;
+}
+
+.col-xl-3 .popular-posts .popular-posts-img img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
+
+.col-xl-3 .popular-posts .popular-posts-img span {
+  position: absolute;
+  left: 55%;
+  top: -16%;
+  padding: 0px 8px;
+  background-color: #2BBEF9;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.col-xl-3 .social-btn-fb {
+  background-color: #3B5998;
+  width: 100%;
+  padding: 8px;
+  height: 42px;
+  border-radius: 4px;
+}
+
+.col-xl-3 .social-btn-fb i, .col-xl-3 .social-btn-fb span {
+  color: white;
+  margin-left: 10px;
+}
+
+.col-xl-3 .social-btn-twtr {
+  background-color: #1DA1F2;
+  width: 100%;
+  padding: 8px;
+  height: 42px;
+  border-radius: 4px;
+}
+
+.col-xl-3 .social-btn-twtr i, .col-xl-3 .social-btn-twtr span {
+  color: white;
+  margin-left: 10px;
+}
+
+.col-xl-3 .social-btn-pntrst {
+  background-color: #E60023;
+  width: 100%;
+  padding: 8px;
+  height: 42px;
+  border-radius: 4px;
+}
+
+.col-xl-3 .social-btn-pntrst i, .col-xl-3 .social-btn-pntrst span {
+  color: white;
+  margin-left: 10px;
+}
+
+.col-xl-3 .social-btn-in {
+  background-color: #0077B5;
+  width: 100%;
+  padding: 8px;
+  height: 42px;
+  border-radius: 4px;
+}
+
+.col-xl-3 .social-btn-in i, .col-xl-3 .social-btn-in span {
+  color: white;
+  margin-left: 10px;
+}
+
+.col-xl-3 .social-btn-reddit {
+  background-color: #FF4500;
+  width: 100%;
+  padding: 8px;
+  height: 42px;
+  border-radius: 4px;
+}
+
+.col-xl-3 .social-btn-reddit i, .col-xl-3 .social-btn-reddit span {
+  color: white;
+  margin-left: 10px;
+}
+
+.col-xl-3 .gif {
+  width: 100%;
+}
+
+.col-xl-3 .tags span {
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 0 10px 10px 0px;
+  display: inline-block;
+}
+
 * {
   font-family: "Inter", sans-serif;
 }
