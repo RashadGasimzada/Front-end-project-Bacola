@@ -1,0 +1,171 @@
+#site-links {
+    background-color: #F7F8FD;
+    .links {
+        .link-home {
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .link-shop {
+            font-size: 14px;
+            color: gray;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        i {
+            font-size: 12px;
+        }
+    }
+}
+#product-detail {
+    background-color: #F7F8FD;
+    .product-detail-card {
+        padding: 30px;
+        background-color: white;
+        border-radius: 20px;
+        .last {
+            border-right: 1px solid gray;
+            padding-right: 10px;
+        }
+        .cross-out {
+            display: inline-block;
+            text-decoration: line-through;
+            color: #C4C4D4;
+            font-size: 25px;
+        }
+        .sale {
+            color: red;
+            font-size: 25px;
+        }
+        .card-text {
+            font-size: 14px;
+            color: #3aff33;
+            margin: 0;
+            text-align: center;
+            width: 80px;
+            background-color: #E5F8ED;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .input-box {
+            input {
+                border: none;
+                background: white;
+                width: 30px;
+                text-align: center;
+            }
+            span {
+                padding: 14px 20px;
+                background: #EDEEF5;
+                border-radius: 50%;
+                cursor: pointer;
+                &:hover {
+                    background-color: #FFCD00;
+                }
+            }
+            .btn {
+                background-color: darkblue;
+                border: none;
+                margin-left: 30px;
+                border-radius: 40px;
+                width: 115px;
+                height: 40px;
+            }
+            
+        }
+        .product-action {
+            .btn {
+                background-color: transparent;
+                border-radius: 10px;
+                border: 1px solid gray;
+                color: black;
+            }
+            a {
+                color: gray;
+                margin-left: 10px;
+                text-decoration: none;
+            }
+        }
+        .check {
+            border-bottom: 1px solid gray;
+            .tick {
+                color: green;
+                margin-right: 10px;
+            }
+        }
+        .product-type {
+            ul {
+                padding: 0;
+                li {
+                    color: gray;
+                    list-style-type: none;
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .social {
+            i {
+                padding: 10px 14px;
+                border-radius: 50%;
+                color: white;
+            }
+            .fa-facebook-f {
+                background-color: #3B5998;
+            }
+            .fa-twitter {
+                background-color: #1DA1F2;
+            }
+            .fa-pinterest-p {
+                background-color: #E60023;
+            }
+            .fa-linkedin-in {
+                background-color: #0077B5;
+            }
+            .fa-reddit {
+                background-color: #FF4500;
+            }
+            .fa-whatsapp {
+                background-color: #25D366;
+            }
+        }
+        .covid-info {
+            background-color: #FFEEF2;
+            height: 40px;
+            display: flex;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            padding-top: 15px;
+            p {
+                color: #CF524D;
+            }
+        }
+        .icon-messages {
+            padding: 20px;
+            background-color: #F7F8FD;
+            border-radius: 10px;
+        }
+    }
+
+}
+#tabs {
+    background-color: #F7F8FD;
+    .tab-content {
+        .tab-pane {
+            input {
+                border: 1px solid gray;
+                padding-left: 15px;
+                width: 100%;
+                height: 44px;
+            }
+        }
+    }
+}
