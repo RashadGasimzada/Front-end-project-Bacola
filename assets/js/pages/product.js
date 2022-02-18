@@ -17,6 +17,8 @@ $(function() {
 
     })
 
-
+    $('.slide').carousel({
+        interval: false,
+      });
 
 })
