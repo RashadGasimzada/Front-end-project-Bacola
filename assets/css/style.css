@@ -1433,8 +1433,21 @@
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 992px) {
+  .col-xl-9 img {
+    width: 600px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .col-xl-9 img {
+    width: 400px !important;
+  }
+}
+
 .col-xl-9 img {
   border-radius: 10px;
+  width: auto;
 }
 
 .col-xl-9 .icons-and-text i {
@@ -1978,6 +1991,128 @@
 
 #viewed-products .col-xl-3 .card .card-body .sale {
   color: red;
+}
+
+.page-links {
+  background-color: white !important;
+}
+
+#products-shop .prev-and-next {
+  text-align: center;
+}
+
+#products-shop .prev-and-next .page-number {
+  padding: 15px 20px;
+  background-color: blue;
+  border-radius: 50%;
+  color: white;
+}
+
+#products-shop .prev-and-next span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#products-shop .prev-and-next i {
+  cursor: pointer;
+}
+
+#products-shop .col-xl-9 img {
+  width: 100%;
+}
+
+#products-shop .col-xl-9 .card {
+  max-height: 360px;
+}
+
+#products-shop .col-xl-9 .card:hover {
+  -webkit-box-shadow: 10px 5px 5px #b9b9b9;
+          box-shadow: 10px 5px 5px #b9b9b9;
+  border: 1px solid #b9b9b9;
+  z-index: 100;
+}
+
+#products-shop .col-xl-9 .card:hover .hidden-box {
+  visibility: visible !important;
+}
+
+#products-shop .col-xl-9 .card .hidden-box {
+  visibility: hidden !important;
+}
+
+#products-shop .col-xl-9 .card .hidden-box .btn {
+  height: 35px;
+  width: 205px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: darkblue;
+  border: none;
+}
+
+#products-shop .col-xl-9 .card img {
+  height: 100px;
+  width: 150px;
+}
+
+#products-shop .col-xl-9 .card .onsale {
+  margin: 20px 0 0 20px;
+  background-color: #2BBEF9;
+  width: 45px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+#products-shop .col-xl-9 .card .recommended {
+  margin: 5px 0 0 20px;
+  text-align: center;
+  background-color: #71778E;
+  color: white;
+  width: 125px;
+  border-radius: 20px;
+}
+
+#products-shop .col-xl-9 .card .card-body .card-title {
+  font-size: 17px;
+}
+
+#products-shop .col-xl-9 .card .card-body .card-text {
+  font-size: 14px;
+  color: #3aff33;
+  margin: 0;
+}
+
+#products-shop .col-xl-9 .card .card-body .cross-out {
+  display: inline-block;
+  text-decoration: line-through;
+  color: #C4C4D4;
+}
+
+#products-shop .col-xl-9 .card .card-body .sale {
+  color: red;
+}
+
+#products-shop .sort-products {
+  background-color: #F7F8FD;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+}
+
+#products-shop .sort-products i {
+  color: gray;
+  cursor: pointer;
+}
+
+#products-shop .sort-products .fa-grip-lines {
+  margin: 0 10px;
+}
+
+#products-shop .sort-products .btn {
+  width: 145px !important;
+  background-color: transparent;
+  border: none;
+  color: black;
 }
 
 * {

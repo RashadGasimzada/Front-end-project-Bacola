@@ -1,6 +1,17 @@
+@media only screen and (max-width: 992px) {
+    .col-xl-9 img{
+        width: 600px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .col-xl-9 img{
+        width: 400px !important;
+    }
+}
 .col-xl-9 {
     img {
         border-radius: 10px;
+        width: auto;
     }
     .icons-and-text{
         i {
